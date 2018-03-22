@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box
+}
+body{
+    background: #ccc
+}
+.container{
+    width: 40%;
+    margin: 0 auto;
+}
+.contain-form{
+    margin-top: 30px;
+
+}
+.form-group .form-control{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px
+}
+.form{
+    background: #eee;
+    padding: 10px;
+    box-shadow: 1px 1px 4px #bbb
+}
+.form,
+.from-group .form-control{
+    border-radius: 4px;
+}
+[id$='error_info']{
+    display: none;
+    color: #882211
+}
+

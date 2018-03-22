@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   <div class="container contain-form">
+       <div class="form">
+           <h1>注册：</h1>
+            <form action="" >
+                <div class="form-group"> 
+                    <label for="">用户名</label>
+                    <input type="text" id="username" name="username" class="form-control" data-rule="minlength:2 | maxlength:8" required>
+                    <div id="username_error_info">xxx</div>
+                </div>
+                <div class="form-group"> 
+                    <label for="">密码</label>
+                    <input type="password" id="password" name="password" class="form-control" data-rule="minlength:6 | maxlength:24" required>
+                    <div id="password_error_info">xxx</div>
+                </div>
+                <div class="form-group"> 
+                    <label for="">tel</label>
+                    <input type="text" id="tel" name="tel" class="form-control" data-rule="tel_length:11" required>
+                    <div id="tel_error_info">xxx</div>
+                </div>
+                <div class="form-group">
+                    <button class="form-control form-control-button" id="register">注册</button>
+                </div>
+            </form>
+       </div>
+   </div>
+</body>
+<!-- <script src="./js/valiadator.js"></script> -->
+<script src="./inputValidator.js"></script>
+<script src="./main.js"></script>
+</html>
