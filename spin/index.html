@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box
+        }
+        #activity{
+            background: gray;
+            height: 100px;
+        }
+        #nav{
+            background: pink;
+            height: 50px;
+        }
+        .fix{
+            width: 100%;
+            position: fixed;
+            top: 0
+        }
+        #main{
+            height: 700px;
+            background: #348923
+        }
+        #footer{
+            height: 40px;
+            background: #258755
+        }
+    </style>
+</head>
+<body>
+    <div id="activity"></div>
+    <div id="nav">
+
+    </div>
+    <div id="main"></div>
+    <div id="footer"></div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="./spin.js">
+</script>
+<script>
+    var nav = document.querySelector('#nav');
+    spin(nav);
+</script>
+</html>
